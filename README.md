@@ -47,6 +47,7 @@ Uvicorn
 📁 Project Structure
 
 📦 project
+
  ┣ 📜 main.py                # FastAPI app + endpoints
  
  ┣ 📜 ai_analysis.py         # Gemini AI prompt & report generator
