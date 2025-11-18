@@ -10,6 +10,7 @@ This project analyzes Indian market sectors using real-time news + Generative AI
 🎯 Final Buy/Sell/Hold Verdict
 
 
+
 ✨ Features
 Feature	Description :
 
@@ -24,6 +25,8 @@ Feature	Description :
 ⚠ Safe Error Handling	Proper 400 / 401 / 429 responses
 
 ⚡ FastAPI Backend	Lightweight & production-ready
+
+
 
 
 🛠 Tech Stack
@@ -45,10 +48,15 @@ Uvicorn
 
 📦 project
  ┣ 📜 main.py                # FastAPI app + endpoints
+ 
  ┣ 📜 ai_analysis.py         # Gemini AI prompt & report generator
+ 
  ┣ 📜 data_collector.py      # Live news scraper
+ 
  ┣ 📜 requirements.txt       # Dependencies
+ 
  ┗ 📜 README.md              # Documentation
+
 
 
 ⚙️ Setup Instructions
@@ -59,6 +67,8 @@ pip install -r requirements.txt
 or manually:
 
 pip install fastapi uvicorn duckduckgo_search google-generativeai
+
+
 
 2️⃣ Add Your Gemini API Key
 
@@ -72,37 +82,51 @@ uvicorn main:app --reload
 
 
 Server starts at:
+
 ➡ http://127.0.0.1:8000
 
 Docs available at:
+
 ➡ http://127.0.0.1:8000/docs
 
 
 🧪 API Usage
 🔹 Endpoint
+
 GET /analyzesector?sector=technology
 
 🔹 Required Header
+
 authorization: your_token
 
 🔹 Example Request
+
 curl -X GET "http://127.0.0.1:8000/analyzesector?sector=energy" \
      -H "authorization: testuser123"
 
+
+
 🔹 Example Output
 📊 MARKET OVERVIEW
+
 Energy sector gaining momentum due to global demand...
 
 📈 OPPORTUNITIES
+
  - Renewable growth
+ - 
  - Electrification drivers
 
+
+
 ⚠ RISKS
+
  - Export volatility
 
 🎯 FINAL VERDICT: HOLD
 
 📌 Supported Sectors
+
 [
  "pharmaceuticals",
  "technology",
@@ -122,6 +146,9 @@ Rate limit definition (inside main.py):
 ⚠ Max 5 requests / minute per token
 
 
+
 🙌 Author
+
 👤 Sarthak Vaghela
+
  ▪ Python ▪ FastAPI
