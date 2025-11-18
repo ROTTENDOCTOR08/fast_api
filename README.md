@@ -8,7 +8,8 @@ This project analyzes Indian market sectors using real-time news + Generative AI
 
 
 ✨ Features
-Feature	Description
+Feature	Description :
+
 🔍 Live News Extraction	Fetches latest sector news using DuckDuckGo
 🤖 AI-Generated Reports	Gemini LLM summarizes and evaluates sector opportunities
 🔑 Token-Based Security	Requires Authorization header
