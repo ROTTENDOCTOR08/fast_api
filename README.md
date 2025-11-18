@@ -2,8 +2,11 @@
 🚀 FastAPI + Gemini AI + Live News Scraper
 
 This project analyzes Indian market sectors using real-time news + Generative AI and produces a Trade Opportunity Report that includes:
+
 📊 Market Overview
+
 🧠 AI-based Opportunity/Risk Analysis
+
 🎯 Final Buy/Sell/Hold Verdict
 
 
@@ -11,24 +14,35 @@ This project analyzes Indian market sectors using real-time news + Generative AI
 Feature	Description :
 
 🔍 Live News Extraction	Fetches latest sector news using DuckDuckGo
+
 🤖 AI-Generated Reports	Gemini LLM summarizes and evaluates sector opportunities
+
 🔑 Token-Based Security	Requires Authorization header
+
 🚦 Custom Rate Limiting	5 requests/min per user
+
 ⚠ Safe Error Handling	Proper 400 / 401 / 429 responses
+
 ⚡ FastAPI Backend	Lightweight & production-ready
 
 
 🛠 Tech Stack
+
 Python 3
+
 FastAPI
+
 DuckDuckGo Search API
+
 Google Gemini AI
+
 Uvicorn
 
 
 
 
 📁 Project Structure
+
 📦 project
  ┣ 📜 main.py                # FastAPI app + endpoints
  ┣ 📜 ai_analysis.py         # Gemini AI prompt & report generator
@@ -39,15 +53,21 @@ Uvicorn
 
 ⚙️ Setup Instructions
 1️⃣ Install dependencies
+
 pip install -r requirements.txt
+
 or manually:
+
 pip install fastapi uvicorn duckduckgo_search google-generativeai
 
 2️⃣ Add Your Gemini API Key
+
 Inside ai_analysis.py
+
 genai.configure(api_key="YOUR_API_KEY")
 
 3️⃣ Run FastAPI Server
+
 uvicorn main:app --reload
 
 
